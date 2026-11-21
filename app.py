@@ -189,6 +189,8 @@ st.markdown('''<div class="banner">
 <div class="kpi"><div class="v">≥70%</div><div class="l">Proposed outbound pipeline target</div></div>
 <div class="kpi"><div class="v">48 hours</div><div class="l">Proposed candidate update standard</div></div>
 </div>''', unsafe_allow_html=True)
+st.markdown("\n<style>\n/* Style native tab roles across Streamlit versions. */\n.stApp [role=\"tablist\"] {\n  display:flex!important; flex-wrap:wrap!important; gap:10px!important;\n  height:auto!important; overflow:visible!important; padding:14px!important;\n  margin:8px 0 22px!important; background:#EFEAE4!important;\n  border:1px solid #DED6CD!important; border-radius:16px!important;\n}\n.stApp [role=\"tab\"] {\n  background:#FFFFFF!important; border:1px solid #D8CEC4!important;\n  border-radius:10px!important; padding:11px 15px!important;\n  min-height:46px!important; height:auto!important; white-space:normal!important;\n  color:#514D4A!important; box-shadow:0 2px 3px #24232908!important;\n}\n.stApp [role=\"tab\"] p,.stApp [role=\"tab\"] span {\n  color:#514D4A!important; font-size:.83rem!important; font-weight:650!important;\n}\n.stApp [role=\"tab\"]:hover { background:#FFF1E8!important; border-color:#BD412F!important; }\n.stApp [role=\"tab\"][aria-selected=\"true\"] {\n  background:#BD412F!important; border-color:#BD412F!important;\n  color:#FFFFFF!important; box-shadow:0 3px 8px #BD412F24!important;\n}\n.stApp [role=\"tab\"][aria-selected=\"true\"] p,\n.stApp [role=\"tab\"][aria-selected=\"true\"] span { color:#FFFFFF!important; }\n.stApp [role=\"tab\"]:focus-visible { outline:3px solid #242329!important; outline-offset:3px!important; }\n.stApp [role=\"tabpanel\"] { border:1px solid #E5E0DA; border-radius:16px; background:#FFFFFF; padding:1.5rem; }\n@media(max-width:600px) {\n  .stApp [role=\"tablist\"] { gap:7px!important; padding:10px!important; }\n  .stApp [role=\"tab\"] { padding:9px 11px!important; }\n}\n</style>\n", unsafe_allow_html=True)
+
 st.caption("Vacancy snapshot: 21 November 2026. Published role requirements are linked below; priorities, targets and exercises are my proposed approach.")
 
 tabs = st.tabs(["1. Live vacancies", "2. Priorities", "3. Hiring bars", "4. Sourcing", "5. Outreach & events", "6. Assessment", "7. Four at once", "8. 30 / 60 / 90", "9. Measures & sources"])
@@ -295,3 +297,4 @@ with tabs[8]:
     st.write("The brief is based on public vacancies and the GTM Talent Partner posting. The plan does not assume access to incident.io’s internal headcount, candidate pipeline or hiring performance.")
 
 st.markdown('<div class="footer">Prepared by Adam Baig · London, UK · GTM hiring plan</div>', unsafe_allow_html=True)
+
